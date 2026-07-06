@@ -6,29 +6,29 @@ import { LinkedinIcon, Mail } from "lucide-react"
 
 const leaders = [
   {
-    name: "Rajesh Sharma",
+    name: "Reyaan Padman S",
     role: "Founder & CEO",
-    bio: "20+ years of experience in procurement and supply chain management. Former consultant at leading PSUs.",
+    // bio: "",
     initials: "RS",
   },
-  {
-    name: "Priya Kapoor",
-    role: "Chief Operating Officer",
-    bio: "Expert in government contracts and GeM operations with extensive experience in public sector projects.",
-    initials: "PK",
-  },
-  {
-    name: "Amit Verma",
-    role: "Chief Technology Officer",
-    bio: "Technology leader with background in enterprise software development and digital transformation.",
-    initials: "AV",
-  },
-  {
-    name: "Sunita Reddy",
-    role: "Head of Business Development",
-    bio: "Strategic growth expert with strong relationships across government and enterprise sectors.",
-    initials: "SR",
-  },
+  // {
+  //   name: "Priya Kapoor",
+  //   role: "Chief Operating Officer",
+  //   bio: "Expert in government contracts and GeM operations with extensive experience in public sector projects.",
+  //   initials: "PK",
+  // },
+  // {
+  //   name: "Amit Verma",
+  //   role: "Chief Technology Officer",
+  //   bio: "Technology leader with background in enterprise software development and digital transformation.",
+  //   initials: "AV",
+  // },
+  // {
+  //   name: "Sunita Reddy",
+  //   role: "Head of Business Development",
+  //   bio: "Strategic growth expert with strong relationships across government and enterprise sectors.",
+  //   initials: "SR",
+  // },
 ]
 
 export function Leadership() {
