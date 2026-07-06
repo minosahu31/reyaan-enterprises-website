@@ -2,7 +2,7 @@
 
 import { motion, useInView } from "framer-motion"
 import { useRef } from "react"
-import { Linkedin, Mail } from "lucide-react"
+import { LinkedinIcon, Mail } from "lucide-react"
 
 const leaders = [
   {
@@ -77,7 +77,7 @@ export function Leadership() {
                     className="w-8 h-8 rounded-full bg-card border border-border flex items-center justify-center text-muted-foreground hover:text-primary hover:border-primary transition-colors"
                     aria-label={`${leader.name} LinkedIn`}
                   >
-                    <Linkedin className="h-4 w-4" />
+                    <LinkedinIcon className="h-4 w-4" />
                   </a>
                   <a
                     href="#"
