@@ -4,7 +4,7 @@ import { motion } from "framer-motion"
 
 export function AboutHero() {
   return (
-    <section className="relative pt-32 pb-20 bg-gradient-to-br from-primary via-primary to-primary/90 overflow-hidden">
+    <section className="relative pt-24 md:pt-32 pb-16 md:pb-20 bg-gradient-to-br from-primary via-primary to-primary/90 overflow-hidden">
       {/* Background Pattern */}
       <div className="absolute inset-0 opacity-10">
         <div
@@ -15,7 +15,7 @@ export function AboutHero() {
         />
       </div>
 
-      <div className="container mx-auto px-4 relative z-10">
+      <div className="max-w-7xl mx-auto px-4 lg:px-8 relative z-10">
         <div className="max-w-4xl mx-auto text-center">
           <motion.span
             initial={{ opacity: 0, y: 20 }}
@@ -29,7 +29,7 @@ export function AboutHero() {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.1 }}
-            className="text-4xl md:text-5xl lg:text-6xl font-bold font-heading text-white mb-6 text-balance"
+            className="text-4xl sm:text-5xl lg:text-6xl leading-tight font-bold font-heading text-white mb-6 text-balance"
           >
             Building Trust Through{" "}
             <span className="text-accent">Excellence</span>

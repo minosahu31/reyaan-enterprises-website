@@ -67,22 +67,41 @@ export function Header() {
       )}
     >
       <div className="container mx-auto px-4">
-        <div className="flex h-20 items-center justify-between">
+        <div className="flex h-20 items-center justify-between gap-8">
 
           {/* Logo */}
-          <Link href="/" className="flex items-center">
+          {/* <Link href="/" className="flex items-center">
             <Image
-              src={isScrolled ? "logo1-blue.png" : "logo1-white.png"}
+              src={isScrolled ? "/logo1-blue.png" : "/logo1-white.png"}
               alt="Reyaan Enterprises"
               width={250}
               height={80}
               priority
-              className="h-12 w-auto md:h-14 lg:h-[11.25rem] lg:mt-0"
+              className="h-14 w-auto sm:h-16 lg:h-16"
             />
-          </Link>
+          </Link> */}
+          <div className="flex items-center">
+            <div className="block sm:hidden">
+              <Image
+                src={isScrolled ? "/logo-mobile-blue.png" : "/logo-mobile-white.png"}
+                alt="Reyaan Enterprises"
+                width={40}
+                height={40}
+                className="w-20 h-20 object-contain"
+              />
+            </div>
+            <div className="hidden sm:block">
+              <Image
+              src={isScrolled ? "/logo1-blue.png" : "/logo1-white.png"}
+              width={250}
+              height={80}
+              alt="Reyaan Enterprises"
+              />
+            </div>
+          </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden lg:flex items-center gap-1">
+          <nav className="hidden lg:flex items-center gap-2 xl:gap-4">
             {navigation.map((item) => (
               <div
                 key={item.name}
@@ -96,8 +115,10 @@ export function Header() {
                       "flex items-center gap-1 px-4 py-2 text-sm font-medium transition-colors rounded-md",
                       "hover:text-primary hover:bg-primary/5",
                       isActive(item.href)
-                        ? (isScrolled ? "text-primary" : "text-white")
-                        : (isScrolled ? "text-foreground/80" : "text-white/90")
+                        ? "text-accent font-semibold"
+                        : isScrolled
+                            ? "text-foreground hover:text-primary"
+                            : "text-white hover:text-accent"
                     )}
                   >
                     {item.name}
@@ -110,8 +131,10 @@ export function Header() {
                       "px-4 py-2 text-sm font-medium transition-colors rounded-md block",
                       "hover:text-primary hover:bg-primary/5",
                       isActive(item.href)
-                        ? (isScrolled ? "text-primary" : "text-white")
-                        : (isScrolled ? "text-foreground/80" : "text-white/90")
+                        ? "text-accent font-semibold"
+                        : isScrolled
+                            ? "text-foreground hover:text-primary"
+                            : "text-white hover:text-accent"
                     )}
                   >
                     {item.name}
@@ -134,9 +157,11 @@ export function Header() {
                           className={cn(
                             "block px-4 py-3 text-sm transition-colors",
                             "hover:bg-primary/5 hover:text-primary",
-                            isActive(item.href)
-                              ? (isScrolled ? "text-primary" : "text-white")
-                              : (isScrolled ? "text-foreground/80" : "text-white/90")
+                            isActive(child.href)
+                              ? "text-accent font-semibold"
+                              : isScrolled
+                                  ? "text-foreground hover:text-primary"
+                                  : "text-white hover:text-accent"
                           )}
                         >
                           {child.name}
@@ -161,7 +186,7 @@ export function Header() {
                   "hidden sm:flex",
                   isScrolled
                     ? "text-foreground hover:bg-primary/5"
-                    : "text-accent hover:bg-white/10"
+                    : "text-white hover:bg-white/10"
                 )}
                 >
                 {theme === "dark" ? (
@@ -184,8 +209,16 @@ export function Header() {
             {/* Mobile Menu */}
             <Sheet open={isMobileMenuOpen} onOpenChange={setIsMobileMenuOpen}>
               <SheetTrigger asChild className="lg:hidden">
-                <Button variant="ghost" size="icon">
-                  <Menu className="h-6 w-6" />
+                <Button
+                  variant="ghost"
+                  size="icon"
+                  className={cn(
+                    isScrolled
+                      ? "text-foreground"
+                      : "text-white"
+                  )}
+                >
+                <Menu className="h-6 w-6" />
                   <span className="sr-only">Open menu</span>
                 </Button>
               </SheetTrigger>
