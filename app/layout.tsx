@@ -27,6 +27,11 @@ export const metadata: Metadata = {
   keywords: ['procurement', 'supply chain', 'GeM', 'government tenders', 'technology services', 'enterprise solutions', 'India'],
   authors: [{ name: 'Reyaan Enterprises' }],
   creator: 'Reyaan Enterprises',
+  icons: {
+    icon: "/icon.png",
+    shortcut: "/icon.png",
+    apple: "/icon.png",
+  },
   openGraph: {
     type: 'website',
     locale: 'en_IN',
