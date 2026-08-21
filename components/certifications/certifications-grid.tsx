@@ -187,7 +187,7 @@ export function CertificationsGrid() {
         </motion.div>
 
         {/* Roadmap */}
-        <motion.div
+        {/* <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
           transition={{ duration: 0.6, delay: 0.3 }}
@@ -257,7 +257,7 @@ export function CertificationsGrid() {
               </motion.div>
             ))}
           </div>
-        </motion.div>
+        </motion.div> */}
 
         {/* Compliance Commitments */}
         <motion.div
