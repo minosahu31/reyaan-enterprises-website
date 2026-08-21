@@ -5,41 +5,41 @@ import { useRef } from "react"
 
 const milestones = [
   {
-    year: "2008",
+    year: "2026 Jan",
     title: "Company Founded",
     description:
       "Reyaan Enterprises was established with a vision to provide quality procurement services.",
   },
+  // {
+  //   year: "2012",
+  //   title: "Government Contracts",
+  //   description:
+  //     "Secured first major government contract and expanded into public sector services.",
+  // },
+  // {
+  //   year: "2016",
+  //   title: "Technology Division",
+  //   description:
+  //     "Launched technology services division to offer comprehensive business solutions.",
+  // },
   {
-    year: "2012",
-    title: "Government Contracts",
-    description:
-      "Secured first major government contract and expanded into public sector services.",
-  },
-  {
-    year: "2016",
-    title: "Technology Division",
-    description:
-      "Launched technology services division to offer comprehensive business solutions.",
-  },
-  {
-    year: "2019",
+    year: "2026 July",
     title: "GeM Registration",
     description:
       "Became a verified seller on Government e-Marketplace, expanding government reach.",
   },
-  {
-    year: "2022",
-    title: "Pan-India Operations",
-    description:
-      "Expanded operations across India with regional offices and partnerships.",
-  },
-  {
-    year: "2024",
-    title: "Digital Transformation",
-    description:
-      "Launched advanced digital solutions and cloud services for enterprise clients.",
-  },
+  // {
+  //   year: "2022",
+  //   title: "Pan-India Operations",
+  //   description:
+  //     "Expanded operations across India with regional offices and partnerships.",
+  // },
+  // {
+  //   year: "2024",
+  //   title: "Digital Transformation",
+  //   description:
+  //     "Launched advanced digital solutions and cloud services for enterprise clients.",
+  // },
 ]
 
 export function CompanyStory() {

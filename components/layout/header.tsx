@@ -112,7 +112,7 @@ export function Header() {
                 {item.children ? (
                   <button
                     className={cn(
-                      "flex items-center gap-1 px-4 py-2 text-sm font-medium transition-colors rounded-md",
+                      "flex items-center gap-1 px-4 py-2 text-sm font-medium transition-colors rounded-md whitespace-nowrap",
                       "hover:text-primary hover:bg-primary/5",
                       isActive(item.href)
                         ? "text-accent font-semibold"
@@ -128,7 +128,7 @@ export function Header() {
                   <Link
                     href={item.href}
                     className={cn(
-                      "px-4 py-2 text-sm font-medium transition-colors rounded-md block",
+                      "px-4 py-2 text-sm font-medium transition-colors rounded-md block whitespace-nowrap",
                       "hover:text-primary hover:bg-primary/5",
                       isActive(item.href)
                         ? "text-accent font-semibold"

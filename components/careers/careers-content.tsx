@@ -152,14 +152,14 @@ export function CareersContent() {
           transition={{ duration: 0.6, delay: 0.3 }}
         >
           <h2 className="text-3xl md:text-4xl font-bold font-heading text-foreground text-center mb-4">
-            Open <span className="text-primary">Positions</span>
+            No Open <span className="text-primary">Positions Currently</span>
           </h2>
-          <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">
+          {/* <p className="text-muted-foreground text-center max-w-2xl mx-auto mb-12">
             Explore current opportunities and find the role that matches your
             skills and aspirations.
-          </p>
+          </p> */}
 
-          <div className="space-y-4">
+          {/* <div className="space-y-4">
             {openPositions.map((position, index) => (
               <motion.div
                 key={position.title}
@@ -210,7 +210,7 @@ export function CareersContent() {
             ))}
           </div>
 
-          <motion.div
+          < motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={isInView ? { opacity: 1, y: 0 } : { opacity: 0, y: 20 }}
             transition={{ duration: 0.6, delay: 0.8 }}
@@ -233,7 +233,7 @@ export function CareersContent() {
                 <ArrowRight className="ml-2 h-4 w-4" />
               </Link>
             </Button>
-          </motion.div>
+          </> */}
         </motion.div>
       </div>
     </section>

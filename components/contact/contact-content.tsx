@@ -321,7 +321,7 @@ export function ContactContent() {
             </motion.div> */}
             <div className="relative rounded-xl overflow-hidden border border-border h-[300px]">
               <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.1088355670186!2d83.19595097594097!3d17.78658138317031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a396700466155e1%3A0xcccc5716b7fc0e3f!2sPreethi%E2%80%99s%20Home%20Vizag!5e0!3m2!1sen!2sin!4v1781499344928!5m2!1sen!2sin"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3799.1062466213875!2d83.19603027512899!3d17.786703091179096!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a3967006b8c4a7d%3A0x192e8a1844321089!2sReyaan%20Enterprises!5e0!3m2!1sen!2sin!4v1787305791187!5m2!1sen!2sin"
                 width="100%"
                 height="100%"
                 style={{ border: 0 }}

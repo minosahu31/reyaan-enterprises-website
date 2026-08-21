@@ -6,7 +6,7 @@ import { LinkedinIcon, Mail } from "lucide-react"
 
 const leaders = [
   {
-    name: "Reyaan Padman S",
+    name: "Reyaan Padman Sahu",
     role: "Founder & CEO",
     // bio: "",
     initials: "RS",
