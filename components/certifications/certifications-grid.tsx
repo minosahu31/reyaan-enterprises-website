@@ -8,29 +8,29 @@ const certifications = [
   {
     icon: FileCheck,
     name: "GST Registration",
-    number: "Under Process",
+    number: "GSTIN: 37GDOPB9186D1Z4",
     description:
-      "Registration under Goods and Services Tax for compliance with Indian tax regulations.",
-    status: "In Progress",
-    validUntil: "Expected Soon",
+      "Registered under Goods and Services Tax for compliance with Indian tax regulations.",
+    status: "Active",
+    validUntil: "Perpetual",
   },
   {
     icon: Building,
     name: "MSME Registration",
-    number: "Under Process",
+    number: "UDYAM-AP-10-0134981",
     description:
-      "Registration under Ministry of Micro, Small and Medium Enterprises, Government of India.",
-    status: "In Progress",
-    validUntil: "Expected Soon",
+      "Registered under Ministry of Micro, Small and Medium Enterprises, Government of India.",
+    status: "Active",
+    validUntil: "Perpetual",
   },
   {
     icon: Shield,
     name: "GeM Seller Registration",
-    number: "Planned",
+    number: "GeM Seller ID: E712260014749225",
     description:
-      "Verified seller registration on Government e-Marketplace for government procurement.",
-    status: "Planned",
-    validUntil: "Post GST/MSME",
+      "Verified seller on Government e-Marketplace for government procurement.",
+    status: "Active",
+    validUntil: "Annual Renewal",
   },
   {
     icon: CheckCircle,
